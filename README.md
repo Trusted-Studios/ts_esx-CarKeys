@@ -7,7 +7,7 @@
 
 ---
 
-# ts_esx-CarKeys | [Documentation](https://docs.trusted-studios.eu/fivem/basic-carkeys)
+# FiveM ESX Car Keys | [Documentation](https://docs.trusted-studios.eu/fivem/basic-carkeys)
 
 A Simple Script allowing players to lock & unlock their owned vehicles.
 
