@@ -5,7 +5,7 @@
 author 'GMW - Trusted Script'
 description 'A simple Script that allows players to lock & unlock their cars.'
 repository 'https://shop.trusted-studios.eu'
-version '0.1.0'
+version '1.0.1'
 
 fx_version 'cerulean'
 lua54 'yes'

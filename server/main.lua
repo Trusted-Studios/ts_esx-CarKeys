@@ -23,11 +23,11 @@ end
 
 ESX.RegisterServerCallback('Trusted:CarKeys:IsVehicleOwner', function(source, isOwner, plate)
     local vehicle = MySQL.single.await("SELECT * FROM owned_vehicles WHERE plate = :plate AND owner = :owner", {
-        plate = plate,
+        plate = string.upper(plate:match("^%s*(.-)%s*$")),
         owner = ESX.GetPlayerFromId(source).getIdentifier()
     })
 
-    if Trusted.Debug then 
+    if Trusted.Debug then
         print(plate, vehicle, json.encode(vehicle or ""))
     end
 
